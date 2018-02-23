@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/theafn/starterjs/issues"
   },
-  "homepage": "https://github.com/theafn/starterjs#readme"
+  "homepage": "https://github.com/theafn/starterjs#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }

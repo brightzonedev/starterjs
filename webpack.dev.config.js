@@ -1,6 +1,6 @@
 import path from 'path';
 
-export default = {
+export default {
     entry: [
         path.resolve(__dirname, 'src/index')
     ],
@@ -11,5 +11,15 @@ export default = {
         path: path.resolve(__dirname, 'src')
     },
     plugins: [],
-    
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader'
+                }
+            }
+        ]
+    }
 };

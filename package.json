@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "node serverStartMessage.js",
-    "start": "node server.js"
+    "start": "npm run test-security && node server.js",
+    "test-security": "nsp check"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "opn": "^5.2.0"
   },
   "devDependencies": {
-    "chalk": "^2.3.1"
+    "chalk": "^2.3.1",
+    "nsp": "^3.2.1"
   }
 }

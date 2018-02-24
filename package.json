@@ -29,7 +29,9 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "chalk": "^2.3.1",
+    "css-loader": "^0.28.10",
     "nsp": "^3.2.1",
+    "style-loader": "^0.20.2",
     "webpack": "^3.11.0",
     "webpack-dev-middleware": "^2.0.6"
   }

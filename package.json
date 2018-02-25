@@ -4,7 +4,7 @@
   "description": "A simple JavaScript starter kit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "jest --watch",
     "prestart": "babel-node serverStartMessage.js",
     "start": "npm run test-security && npm run lint && babel-node server.js",
     "test-security": "nsp check",
@@ -32,6 +32,7 @@
     "chalk": "^2.3.1",
     "css-loader": "^0.28.10",
     "eslint": "^4.18.1",
+    "jest": "^22.4.2",
     "nsp": "^3.2.1",
     "style-loader": "^0.20.2",
     "webpack": "^3.11.0",

@@ -1,1 +1,1 @@
-alert('Hello AfnLite');
+console.log('Test eslint');

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --watch",
     "prestart": "babel-node serverStartMessage.js",
-    "start": "npm run test-security && npm run lint && babel-node server.js",
+    "start": "npm run test-security && npm run lint && babel-node server.js | npm test",
     "test-security": "nsp check",
     "lint": "eslint webpack.* server.js serverStartMessage.js src --fix --color"
   },

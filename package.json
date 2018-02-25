@@ -4,7 +4,7 @@
   "description": "A simple JavaScript starter kit",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch",
+    "test": "jest",
     "prestart": "babel-node serverStartMessage.js",
     "start": "npm run test-security && npm run lint && babel-node server.js",
     "test-security": "nsp check",
